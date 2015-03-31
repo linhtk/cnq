@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+        <!-- Mobile Specific -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <title>Administrator</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Custom styles for this template -->
+        <link href="css/dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+        <link rel="stylesheet" href="css/jquery.fileupload.css">
+        <script src="js/ie-emulation-modes-warning.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="radius inner">
+                <div class="load-line"></div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-paper-plane-o fa-lg"></i> Administrator</a>
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li class="btn-sidebar-collapse"><a href="#"><i class="fa fa-dedent fa-lg"></i></a></li>
+                    </ul>
+
+                    <p class="navbar-text hidden-xs">Hệ thống quản lý kho hàng</p>
+
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li class="dropdown notify-row">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope-o fa-lg"></i> <span class="badge bg-danger pull-right">4</span></a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-red"></div>
+                            <li>
+                                <p class="red">Bạn có 4 tin nhắn</p>
+                            </li>
+                            <li> <a href="#"> <span class="subject"> <span class="from">Trương Kiều Linh</span> <span class="time">24/03/2015</span> </span> <span class="message"> Tôi muốn mua sản phẩm... </span> </a> </li>
+                            <li> <a href="#"> <span class="subject"> <span class="from">Nguyễn Mạnh Anh</span> <span class="time">14/02/2015</span> </span> <span class="message"> Tôi đã thanh toán... </span> </a> </li>
+                            <li> <a href="#"> <span class="subject"> <span class="from">Nguyễn Minh Anh</span> <span class="time">21/01/2015</span> </span> <span class="message"> Bạn ơi cho mình hỏi chút... </span> </a> </li>
+                            <li> <a href="#"> <span class="subject"> <span class="from">Nguyễn Hải Phong</span> <span class="time">20/01/2015</span> </span> <span class="message"> Bên bạn có bán online?... </span> </a> </li>
+                            <li class="external"> <a href="#">Xem tất cả các tin nhắn</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <img src="images/ly1.jpg" alt="avatar" style="max-height: 20px"> 
+                            <span class="hidden-xs">Tài khoản</span> <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="profile.html"><i class="fa fa-user"></i> Thông tin cá nhân</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container-fluid main-content">
+            <div class="row">
+
+                <div class="sidebar mCustomScrollbar light" data-mcs-theme="minimal-dark">
+
+                    <div  class="collapse navbar-collapse" id="navbar-collapse">
+                        <h5 class="sidebartitle">Sản phẩm</h5>
+                        <ul class="nav nav-sidebar">
+                            <!--<li class="active"><a href="#"><i class="fa fa-home fa-lg"></i> <span>Trang chủ</span></a></li>-->
+                            <li><a href="#"><i class="fa fa-folder-open-o fa-lg"></i> <span>Quản lý danh mục</span></a></li>
+                            <li><a href="list.html"><i class="fa fa-shopping-cart fa-lg"></i> <span>Quản lý Sản phẩm</span></a></li>
+                            <li><a href="#"><i class="fa fa-flag-o fa-lg"></i> <span>Quản lý thương hiệu</span></a></li>
+                            <li><a href="#"><i class="fa fa-file-excel-o fa-lg"></i> <span>Quản lý Báo giá</span></a></li>
+
+                        </ul>
+                        <h5 class="sidebartitle">Quản lý chung</h5>
+                        <ul class="nav nav-sidebar">
+                            <li><a href="#"><i class="fa fa-picture-o fa-lg"></i> <span>Quản lý Quảng cáo</span></a></li>
+                            <li><a href="#"><i class="fa fa-support fa-lg"></i> <span>Quản lý Hỗ trợ</span></a></li>
+                            <li><a href="#"><i class="fa fa-files-o fa-lg"></i> <span>Quản lý Trang tĩnh</span></a></li>
+                            <li><a href="#"><i class="fa fa-newspaper-o fa-lg"></i> <span>Quản lý Tin tức</span></a></li>
+                            <li><a href="#"><i class="fa fa-users fa-lg"></i> <span>Quản lý tài khoản</span></a></li>
+                            <li class="active"><a href="#"><i class="fa fa-envelope-o fa-lg"></i> <span>Email</span></a></li>
+                            <li class="visible-xs"><a href="#"><i class="fa fa-sign-out fa-lg"></i> Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <h3 class="page-header"><i class="fa fa-envelope-o"></i> Email
+                    </h3>
+
+                    <h4 class="sub-header">Danh sách email</h4>
+                    <div class="row">
+                        <form class="" role="search">
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="input-group form-group">
+                                    <input type="text" class="form-control input-sm" placeholder="Từ khóa tìm kiếm...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary" type="button">Tìm kiếm</button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+
+                        </form>  
+                    </div>
+                    <!--End search-->
+                    <ul class="list-group" id="email">
+                        <li class="list-group-item email-item unread">
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> Tiêu đề email
+                                        - <span class="">Nội dung email hiển thị ở đây</span>
+                                    </a> 
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item email-item ">
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> Tiêu đề email 
+                                        - <span class="">Nội dung email hiển thị ở đây</span>
+                                    </a>
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item email-item ">
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> Tiêu đề email 
+                                        - <span class="">Nội dung email hiển thị ở đây</span>
+                                    </a>
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item email-item ">
+
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> Tiêu đề email 
+                                        - <span class="">Nội dung email hiển thị ở đây</span>
+                                    </a>
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item email-item unread">
+
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> Tiêu đề email 
+                                        - <span class="">Nội dung email hiển thị ở đây</span>
+                                    </a>
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item email-item ">
+                            <div class="media">
+                                
+                                <div class="media-body media-middle">
+                                    <a href="#"><i class="fa fa-envelope-o fa-fw text-muted"></i> IT - Kết nối SVN, Vgate, Fdoc chập chờn
+                                        - <span class="">Hiện tại phía cung cấp server online đang gặp vấn đề về mạng internet, nên việc truy cập SVN, Fdoc,</span>
+                                    </a>
+                                </div>
+                                <div class="media-right">
+                                    <span class="text-muted">05/03/2015</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/vendor/jquery.1.11.2.min.js"></script>
+        <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+        <script src="js/vendor/jquery-ui.1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- The basic File Upload plugin -->
+        <script src="js/jquery.fileupload.js"></script>
+        <script src="js/jquery.switchButton.js"></script>
+        <script src="js/jquery.Scrollbar.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/upload.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+

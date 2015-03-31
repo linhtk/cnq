@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<!-- 
+TEMPLATE NAME : A-CMS backend
+VERSION : 1.0.0
+AUTHOR : Anhnm
+AUTHOR URL : http://anhnm.com   
+EMAIL : anhnm.2610@gmail.com
+LAST UPDATE: 2015/03/27
+
+
+-->
+<html class="backend">
+    <!-- START Head -->
+    <head>
+        <!-- START META SECTION -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A-CMS backend</title>
+        <meta name="author" content="anhnm.com">
+        <meta name="description" content="Adriano - CSM - Administrator">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="image/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="image/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="image/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="image/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="image/favicon.ico">
+        <!--/ END META SECTION -->
+
+        <!-- START STYLESHEETS -->
+
+        <!-- Application stylesheet -->
+        <link rel="stylesheet" href="stylesheet/bootstrap.css">
+        <link rel="stylesheet" href="stylesheet/layout.css">
+        <link rel="stylesheet" href="stylesheet/uielement.css">
+        <!--/ Application stylesheet -->
+
+        <!-- modernizr script -->
+        <script type="text/javascript" src="plugins/modernizr/js/modernizr.js"></script>
+        <!--/ modernizr script -->
+        <!-- END STYLESHEETS -->
+    </head>
+    <!--/ END Head -->
+
+    <!-- START Body -->
+    <body>
+        <!-- START Template Header -->
+        <header id="header" class="navbar">
+            <!-- START navbar header -->
+            <div class="navbar-header">
+                <!-- Brand -->
+                <a class="navbar-brand" href="javascript:void(0);">
+                    <span class="logo-figure"></span>
+                    <span class="logo-text"></span>
+                </a>
+                <!--/ Brand -->
+            </div>
+            <!--/ END navbar header -->
+
+            <!-- START Toolbar -->
+            <div class="navbar-toolbar clearfix">
+                <!-- START Left nav -->
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Sidebar shrink -->
+                    <li class="hidden-xs hidden-sm">
+                        <a href="javascript:void(0);" class="sidebar-minimize" data-toggle="minimize" title="Minimize sidebar">
+                            <span class="meta">
+                                <span class="icon"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Sidebar shrink -->
+
+                    <!--/ Navbar collapse -->
+
+                    <!-- Offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <li class="navbar-main hidden-lg hidden-md hidden-sm">
+                        <a href="javascript:void(0);" data-toggle="sidebar" data-direction="ltr" rel="tooltip" title="Menu sidebar">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-paragraph-justify3"></i></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Offcanvas left -->
+
+
+
+
+                    <!-- Search form toggler  -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="dropdown" data-target="#dropdown-form">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-search"></i></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Search form toggler -->
+                </ul>
+                <!--/ END Left nav -->
+
+                <!-- START navbar form -->
+                <div class="navbar-form navbar-left dropdown" id="dropdown-form">
+                    <form action="" role="search">
+                        <div class="has-icon">
+                            <input type="text" class="form-control" placeholder="Nhập từ khóa...">
+                            <i class="ico-search form-control-icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <!-- START navbar form -->
+
+                <!-- START Right nav -->
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Notification dropdown -->
+                    <li class="dropdown custom" id="header-dd-notification">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-bell"></i></span>
+                                <span class="hasnotification hasnotification-danger"></span>
+                            </span>
+                        </a>
+
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-header">
+                                <span class="title">Notification <span class="count"></span></span>
+                                <span class="option text-right"><a href="#">Xem tất cả</a></span>
+                            </div>
+                            <div class="dropdown-body slimscroll">
+                                <!-- Message list -->
+                                <div class="media-list">
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="media read border-dotted">
+                                        <span class="media-body">
+                                            <span class="media-text"><span class="text-primary semibold">Nguyễn Mạnh Anh</span><br/> Nội dung ngắn của email hiển thị ở đây...</span>
+                                            <!-- meta icon -->
+                                            <span class="media-meta pull-right">2d</span>
+                                            <!--/ meta icon -->
+                                        </span>
+                                    </a>
+                                </div>
+                                <!--/ Message list -->
+                            </div>
+                        </div>
+                        <!--/ Dropdown menu -->
+                    </li>
+                    <!--/ Notification dropdown -->
+                    <!-- Offcanvas right This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <li class="navbar-main">
+                        <a href="javascript:void(0);" data-toggle="sidebar" data-direction="rtl" rel="tooltip" title="Account">
+                            <span class="meta">
+                                <span class="icon"><i class="ico-users"></i></span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--/ Offcanvas right -->
+                </ul>
+                <!--/ END Right nav -->
+
+                <!-- START nav collapse -->
+                <div class="" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">
+                                <span class="meta">
+                                    <span class="text">Trang chủ</span>
+                                </span>
+                            </a>
+                        </li>
+                        <!--                        <li>
+                                                    <a href="#">
+                                                        <span class="meta">
+                                                            <span class="text">Will collapse</span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="meta">
+                                                            <span class="text">On mobile</span>
+                                                            <span class="caret"></span>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">One more link</a></li>
+                                                    </ul>
+                                                </li>-->
+                    </ul>
+                </div>
+                <!--/ END nav collapse -->
+            </div>
+            <!--/ END Toolbar -->
+        </header>
+        <!--/ END Template Header -->
+
+        <!-- START Template Sidebar (Left) -->
+        <aside class="sidebar sidebar-left sidebar-menu">
+            <!-- START Sidebar Content -->
+            <section class="content slimscroll">
+                <h5 class="heading">Danh mục chính</h5>
+                <!-- START Template Navigation/Menu -->
+                <ul class="topmenu topmenu-responsive" data-toggle="menu">
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mProduct" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-cart"></i></span>
+                            <span class="text">Sản phẩm</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mProduct" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Sản phẩm</li>
+                            <li><a href="listview.html"><span class="text">Tất cả sản phẩm</span></a></li>
+                            <li><a href="add.html"><span class="text">Thêm mới</span></a></li>
+                            <li><a href="#"><span class="text">Danh mục</span></a></li>
+                            <li><a href="#"><span class="text">Thương hiệu</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mNews" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-newspaper"></i></span>
+                            <span class="text">Tin tức</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mNews" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Tin tức</li>
+                            <li><a href="list.html"><span class="text">Tất cả tin tức</span></a></li>
+                            <li><a href="list.html"><span class="text">Thêm mới</span></a></li>
+                            <li><a href="#"><span class="text">Danh mục</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mServices" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-newspaper"></i></span>
+                            <span class="text">Dịch vụ</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mServices" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Dịch vụ</li>
+                            <li><a href="list.html"><span class="text">Tất cả dịch vụ</span></a></li>
+                            <li><a href=""><span class="text">Thêm mới</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mPages" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-stack"></i></span>
+                            <span class="text">Nội dung tĩnh</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mPages" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Nội dung tĩnh</li>
+                            <li><a href="#"><span class="text">Tất cả</span></a></li>
+                            <li><a href="#"><span class="text">Thêm mới</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mUser" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-users"></i></span>
+                            <span class="text">Tài khoản</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mUser" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Tài khoản</li>
+                            <li><a href="list.html"><span class="text">Tất cả tài khoản</span></a></li>
+                            <li><a href="#"><span class="text">Thêm mới</span></a></li>
+                            <li><a href="#"><span class="text">Tài khoản của bạn</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                </ul>
+                <!--/ END Template Navigation/Menu -->
+                <h5 class="heading">Quản lý chung</h5>
+                <!-- START Template Navigation/Menu -->
+                <ul class="topmenu topmenu-responsive" data-toggle="menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="figure"><i class="ico-menu3"></i></span>
+                            <span class="text">Quản lý Menu</span>
+                        </a>
+                        <!--/ END 1nd Level Menu--> 
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="figure"><i class="ico-images"></i></span>
+                            <span class="text">Quản lý quảng cáo</span>
+                        </a>
+                        <!--/ END 1nd Level Menu--> 
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="figure"><i class="ico-file-excel"></i></span>
+                            <span class="text">Quản lý báo giá</span>
+                        </a>
+                        <!--/ END 1nd Level Menu--> 
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mCongs" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-cogs2"></i></span>
+                            <span class="text">Cấu hình</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mCongs" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Cấu hình</li>
+                            <li><a href="list.html"><span class="text">Cấu hình liên hệ</span></a></li>
+                            <li><a href="list.html"><span class="text">Cấu hình SEO</span></a></li>
+                            <li><a href="list.html"><span class="text">Cấu hình hệ thống</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" data-target="#mUtilities" data-toggle="submenu" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-tools"></i></span>
+                            <span class="text">Tiện ích</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <!-- START 2nd Level Menu -->
+                        <ul id="mUtilities" class="submenu collapse"> <!-- Add class In để giữ active -->
+                            <li class="submenu-header ellipsis">Tiện ích</li>
+                            <li><a href="list.html"><span class="text">Xem rank trên alexa</span></a></li>
+                            <li><a href="list.html"><span class="text">Google Analytics</span></a></li>
+                            <li><a href="list.html"><span class="text">Google Webmaster</span></a></li>
+                        </ul>
+                        <!--/ END 2nd Level Menu -->
+                    </li>
+                    
+
+
+
+                </ul>
+                <!--/ END Template Navigation/Menu -->
+
+                <!-- START Template Navigation/Menu -->
+<!--                <ul class="topmenu topmenu-responsive" data-toggle="menu">
+                    <li >
+                        <a href="javascript:void(0);" data-toggle="submenu" data-target="#demoNav" data-parent=".topmenu">
+                            <span class="figure"><i class="ico-file6"></i></span>
+                            <span class="text">Demo NAV</span>
+                            <span class="arrow"></span>
+                        </a>
+                         START 2nd Level Menu 
+                        <ul id="demoNav" class="submenu collapse ">
+                            <li class="submenu-header ellipsis">Demo NAV</li>
+                            <li >
+                                <a href="page-task.html">
+                                    <span class="text">Menu cấp 2</span>
+                                    <span class="number"><span class="label label-success">N</span></span>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="page-starter.html">
+                                    <span class="text">Menu cấp 2</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="javascript:void(0);" data-toggle="submenu" data-target="#submenu2" data-parent="#demoNav">
+                                    <span class="text">Menu Cấp 2</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                 START 2nd Level Menu 
+                                <ul id="submenu2" class="submenu collapse ">
+                                    <li >
+                                        <a href="page-timeline-v1.html"><span class="text">Menu cấp 3</span></a>
+                                    </li>
+                                    <li >
+                                        <a href="page-timeline-v2.html"><span class="text">Menu cấp 3</span></a>
+                                    </li>
+                                </ul>
+                                / END 2nd Level Menu 
+                            </li>
+                        </ul>
+                        / END 2nd Level Menu 
+                    </li>
+                </ul>-->
+                <!--/ END Template Navigation/Menu -->
+            </section>
+            <!--/ END Sidebar Container -->
+        </aside>
+        <!--/ END Template Sidebar (Left) -->
+
+        <!-- START Template Sidebar (right) -->
+        <aside class="sidebar sidebar-right">
+            <!-- START Offcanvas -->
+            <div class="offcanvas-container" data-toggle="offcanvas" data-options='{"openerClass":"offcanvas-opener", "closerClass":"offcanvas-closer"}'>
+                <!-- START Wrapper -->
+                <div class="offcanvas-wrapper">
+                    <!-- Offcanvas Left -->
+                    <div class="offcanvas-left">
+                        <!-- Header -->
+                        <div class="header pl0 pr0">
+                            <ul class="list-table nm">
+                                <li style="width:50px;height:34px;" class="text-center">
+                                    <a href="javascript:void(0);" class="text-default offcanvas-closer"><i class="ico-arrow-left6 fsize16"></i></a>
+                                </li>
+                                <li class="text-center">
+                                    <h5 class="semibold nm">Đổi mật khẩu</h5>
+                                </li>
+                                <li style="width:50px;height:34px;" class="text-center">
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ Header -->
+
+                        <!-- Content -->
+                        <div class="content slimscroll">
+                            chỗ thay mật khẩu
+                        </div>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Offcanvas Left -->
+
+                    <!-- Offcanvas Content -->
+                    <div class="offcanvas-content">
+                        <!-- Content -->
+                        <div class="content slimscroll">
+                            <!-- START profile -->
+                            <div class="panel nm">
+                                <!-- thumbnail -->
+                                <div class="thumbnail">
+                                    <!-- media -->
+                                    <div class="media">
+                                        <!-- indicator -->
+                                        <div class="indicator"><span class="spinner"></span></div>
+                                        <!--/ indicator -->
+                                        <img data-toggle="unveil" data-src="image/background3.jpg" alt="Cover" width="100%">
+                                    </div>
+                                    <!--/ media -->
+                                </div>
+                                <!--/ thumbnail -->
+                            </div>
+                            <div class="panel-body text-center" style="margin-top:-55px;z-index:11">
+                                <img class="img-circle mb5" src="image/avatar7.jpg" alt="" width="75">
+                                <h5 class="bold mt0 mb5">Nguyễn Mạnh Anh</h5>
+                                <p>Administrator</p>
+                            </div>
+                            <!--/ END profile -->
+                            <!--Nội dung -->
+                            <h5 class="heading">Mạng xã hội</h5>
+                            <ul class="topmenu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-facebook-sign"></i></span>
+                                        <span class="text">Facebook</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-google-plus"></i></span>
+                                        <span class="text">Google Reader</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-twitter2"></i></span>
+                                        <span class="text">Twitter Source</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h5 class="heading">Tài khoản</h5>
+                            <ul class="topmenu">
+                                <li>
+                                    <a class="offcanvas-opener offcanvas-open-ltr" href="javascript:void(0);">
+                                        <span class="figure"><i class="ico-user2"></i></span>
+                                        <span class="text">Thay đổi mật khẩu</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="text-danger">
+                                        <span class="figure"><i class="ico-switch"></i></span>
+                                        <span class="text">Đăng xuất</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Offcanvas Content -->
+
+                </div>
+                <!--/ END Wrapper -->
+            </div>
+            <!--/ END Offcanvas -->
+        </aside>
+        <!--/ END Template Sidebar (right) -->
+        <!-- START Template Footer -->
+        <footer id="footer">
+            <!-- START container-fluid -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- copyright -->
+                        <p class="nm text-muted">© Copyright 2015 by <a href="javascript:void(0);" class="semibold">Anhnm</a>. All Rights Reserved.</p>
+                        <!--/ copyright -->
+                    </div>
+                    <div class="col-sm-6 text-right hidden-xs">
+                        <a href="javascript:void(0);" class="semibold">Privacy Policy</a>
+                        <span class="ml5 mr5">•</span>
+                        <a href="javascript:void(0);" class="semibold">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <!--/ END Template Footer -->
+            <!--/ END container-fluid -->
+        </footer>
+        <!-- START Template Main -->
+        <section id="main" role="main">
+            <!-- START Template Container -->
+            <div class="container-fluid">
+                <!-- Page Header -->
+                <div class="page-header page-header-block">
+                    <div class="page-header-section">
+                        <h4 class="title semibold">Header + Navbar Collapse</h4>
+                    </div>
+                    <div class="page-header-section">
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <button class="btn btn-primary">Thêm</button>
+                        </div>
+                        <!--/ Toolbar -->
+                    </div>
+                </div>
+                <!-- Page Header -->
+
+
+            </div>
+            <!--/ END Template Container -->
+
+            <!-- START To Top Scroller -->
+            <a href="#" class="totop animation" data-toggle="waypoints totop" data-showanim="bounceIn" data-hideanim="bounceOut" data-offset="50%"><i class="ico-angle-up"></i></a>
+            <!--/ END To Top Scroller -->
+        </section>
+        <!--/ END Template Main -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- Application and vendor script : mandatory -->
+        <script type="text/javascript" src="javascript/vendor.js"></script>
+        <script type="text/javascript" src="javascript/core.js"></script>
+        <script type="text/javascript" src="javascript/backend/app.js"></script>
+        <!--/ Application and vendor script : mandatory -->
+
+        <!-- Plugins and page level script : optional -->
+        <!--/ Plugins and page level script : optional -->
+        <!--/ END JAVASCRIPT SECTION -->
+    </body>
+    <!--/ END Body -->
+</html>
