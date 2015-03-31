@@ -4636,8 +4636,8 @@
 		}
 
 		.md_flexbox .list_of_entries.grid_view > li{
-			-webkit-flex-basis: 50%;
-					flex-basis: 50%;
+			-webkit-flex-basis: 25%;
+					flex-basis: 25%;
 		}
 
 		.md_flexbox .list_of_entries.grid_view > li:nth-child(2n)::before{ border-left-width: 0px; }
